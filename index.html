@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga de la App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffffff, #00a859); /* Fondo blanco a verde */
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00a859;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00a859;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+        .button:hover {
+            background-color: #007a40;
+        }
+        .apk-info {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Descarga nuestra App</h1>
+        <p>Haz clic en los botones de abajo para descargar la aplicación o la documentación.</p>
+        <a class="button" href="app-release.apk" download="MiApp.apk">Descargar APK</a>
+        <a class="button" href="Documentacion%20Introduccion.pdf" download="Documentacion-Introduccion.pdf">Documentación</a>
+        <p class="apk-info">Versión: 1.0.0 | Tamaño APK: 25MB | Tamaño PDF: 2MB</p>
+    </div>
+</body>
+</html>

@@ -3,55 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarga de la App</title>
+    <title>Tu App para Restaurantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ffffff, #00a859); /* Fondo blanco a verde */
-            text-align: center;
-            color: #333;
-            padding: 20px;
+            font-family: 'Roboto', sans-serif;
         }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #00a859;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #00a859;
+        header {
+            background: linear-gradient(135deg, #38a169, #2b6cb0);
             color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-right: 10px;
+            text-align: center;
+            padding: 100px 20px;
         }
-        .button:hover {
-            background-color: #007a40;
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
         }
-        .apk-info {
-            margin-top: 15px;
-            font-size: 14px;
-            color: #666;
+        header p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        header a {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+        }
+        #features {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+        }
+        #features h2 {
+            text-align: center;
+            color: #2b6cb0;
+            margin-bottom: 40px;
+        }
+        #features .feature {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #features i {
+            font-size: 3rem;
+            color: #38a169;
+        }
+        .cta {
+            background: linear-gradient(135deg, #2b6cb0, #38a169);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta h2 {
+            font-size: 2.5rem;
+        }
+        .cta a {
+            margin: 20px auto;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+        }
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Descarga nuestra App</h1>
-        <p>Haz clic en los botones de abajo para descargar la aplicación o la documentación.</p>
-        <a class="button" href="app-release.apk" download="MiApp.apk">Descargar APK</a>
-        <a class="button" href="Introduccion.pdf" download="Introduccion.pdf">Documentación</a>
-        <p class="apk-info">Versión: 1.0.0 | Tamaño APK: 25MB | Tamaño PDF: 2MB</p>
-    </div>
+    <!-- Sección Principal -->
+    <header>
+        <h1>La App que Transformará tu Restaurante</h1>
+        <p>Gestión completa para dueños, administradores y clientes. ¡Todo en una sola aplicación!</p>
+        <a href="mi_aplicacion.apk" class="btn btn-light text-success shadow-sm">Descargar Ahora</a>
+        <a href="#features" class="btn btn-outline-light shadow-sm">Descubrir Más</a>
+    </header>
+
+    <!-- Características -->
+    <section id="features">
+        <div class="container">
+            <h2>¿Por qué elegir nuestra App?</h2>
+            <div class="row">
+                <div class="col-md-4 feature">
+                    <i class="bi bi-person-fill"></i>
+                    <h4>Panel de Superadministrador</h4>
+                    <p>Control total: gestiona usuarios, pedidos, ventas y mucho más desde un solo lugar.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <i class="bi bi-gear-fill"></i>
+                    <h4>Panel de Administrador</h4>
+                    <p>Organiza las operaciones del restaurante: pedidos en tiempo real y supervisión del personal.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <i class="bi bi-cart-fill"></i>
+                    <h4>Interfaz para Clientes</h4>
+                    <p>Fácil y rápida: realiza pedidos, accede a promociones y rastrea entregas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamada a la Acción -->
+    <section class="cta">
+        <h2>Empieza a Transformar tu Restaurante Hoy</h2>
+        <p>Con nuestra app, tendrás todo lo que necesitas para gestionar tu restaurante de manera eficiente y profesional.</p>
+        <a href="mi_aplicacion.apk" class="btn btn-light text-success shadow-lg">Descargar APK</a>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 Tu App para Restaurantes | Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

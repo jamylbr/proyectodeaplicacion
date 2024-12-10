@@ -9,6 +9,8 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
             background: linear-gradient(135deg, #38a169, #2b6cb0);
@@ -28,6 +30,7 @@
             margin: 10px;
             padding: 15px 25px;
             font-size: 1.2rem;
+            text-decoration: none;
         }
         #features {
             background-color: #f9f9f9;
@@ -59,6 +62,38 @@
             margin: 20px auto;
             padding: 15px 25px;
             font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .demo-section {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+        }
+        .demo-section h3 {
+            text-align: center;
+            color: #2b6cb0;
+            margin-bottom: 40px;
+        }
+        .demo-cards .card {
+            margin: 15px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .demo-cards .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .demo-cards .card-body {
+            text-align: center;
+        }
+        .user-roles {
+            background-color: #f1f1f1;
+            padding: 60px 20px;
+        }
+        .user-roles h3 {
+            text-align: center;
+            color: #2b6cb0;
+            margin-bottom: 40px;
         }
         footer {
             background-color: #2d3748;
@@ -72,7 +107,7 @@
     <!-- Sección Principal -->
     <header>
         <h1>La App que Transformará tu Restaurante</h1>
-        <p>Gestión completa para dueños, administradores y clientes. ¡Todo en una sola aplicación!</p>
+        <p>Gestión completa para dueños, administradores, repartidores y clientes. ¡Todo en una sola aplicación!</p>
         <a href="mi_aplicacion.apk" class="btn btn-light text-success shadow-sm">Descargar Ahora</a>
         <a href="#features" class="btn btn-outline-light shadow-sm">Descubrir Más</a>
     </header>
@@ -101,6 +136,62 @@
         </div>
     </section>
 
+    <!-- Sección de Demos -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h3>Demostraciones por Tipo de Usuario</h3>
+            <div class="row demo-cards">
+                <!-- Superadministrador -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="superadmin-demo.png" class="card-img-top" alt="Superadministrador Demo">
+                        <div class="card-body">
+                            <h5 class="card-title">Superadministrador</h5>
+                            <p class="card-text">Demostración de las funcionalidades de gestión global, control de usuarios y supervisión.</p>
+                            <a href="superadmin-demo.mp4" class="btn btn-outline-primary" target="_blank">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administrador -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="admin-demo.png" class="card-img-top" alt="Administrador Demo">
+                        <div class="card-body">
+                            <h5 class="card-title">Administrador</h5>
+                            <p class="card-text">Demostración de la gestión de pedidos en tiempo real y supervisión de personal.</p>
+                            <a href="admin-demo.mp4" class="btn btn-outline-primary" target="_blank">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repartidor -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="repartidor-demo.png" class="card-img-top" alt="Repartidor Demo">
+                        <div class="card-body">
+                            <h5 class="card-title">Repartidor</h5>
+                            <p class="card-text">Demostración de la interfaz para repartir pedidos y visualizar rutas en tiempo real.</p>
+                            <a href="repartidor-demo.mp4" class="btn btn-outline-primary" target="_blank">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cliente -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="cliente-demo.png" class="card-img-top" alt="Cliente Demo">
+                        <div class="card-body">
+                            <h5 class="card-title">Cliente</h5>
+                            <p class="card-text">Demostración de la interfaz de usuario: cómo hacer pedidos y rastrear entregas.</p>
+                            <a href="cliente-demo.mp4" class="btn btn-outline-primary" target="_blank">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Llamada a la Acción -->
     <section class="cta">
         <h2>Empieza a Transformar tu Restaurante Hoy</h2>
@@ -112,5 +203,8 @@
     <footer>
         <p>© 2024 Tu App para Restaurantes | Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
